@@ -27,6 +27,7 @@ Thread.sleep(5000);
 @Test(priority = 1)
 public void url() throws InterruptedException
 {
+	//send url
 	driver.get("https://www.facebook.com/");
 	Thread.sleep(5000);
 }

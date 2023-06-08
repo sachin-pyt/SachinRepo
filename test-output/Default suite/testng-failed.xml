@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNG.Assignment_02">
+      <class name="page.objectmodel.Proppom">
         <methods>
-          <include name="getTestResult"/>
-          <include name="LoginPageFB" invocation-numbers="1 2 3"/>
+          <include name="login_FB"/>
         </methods>
-      </class> <!-- TestNG.Assignment_02 -->
+      </class> <!-- page.objectmodel.Proppom -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

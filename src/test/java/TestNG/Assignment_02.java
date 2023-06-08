@@ -79,14 +79,13 @@ public void getTestResult(ITestResult testResult)
 	if(status==1)
 	{
 		driver.close();
-		System.out.println("test");
-	}
+	}  
 	else
 	{
 		//Take screenshot and close the browser
 		File outfile = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		try {
-			FileUtils.copyFile(outfile, new File("/Users/pyt/eclipse-workspace/sachinsmavenproject/src/test/resources/scrennshotss" + testResult.getParameters()[0] + "Defect.jpeg"));
+			FileUtils.copyFile(outfile, new  File("/Users/pyt/eclipse-workspace/sachinsmavenproject/src/test/resources/scrennshotss" + testResult.getParameters()[0] + "Defect.jpeg"));
 		} catch (IOException e)  {
 			e.printStackTrace();
 		}
